@@ -4,17 +4,7 @@ Final project for the Building AI course
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
-
-
-## Background
-
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
-
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+This is a course project dedicated to exploring and implementing a specific Artificial Intelligence technique to innovate or assist in the field of digital painting and art creation.
 
 
 ## How is it used?
