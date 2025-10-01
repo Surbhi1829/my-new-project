@@ -76,19 +76,64 @@ If you need to use links, here's an example:
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+    Technical Accuracy: The AI model often struggles with structural precision, specifically generating correct human anatomy (like fingers) and creating legible text or logos within the image.
+
+    Prompt Interpretation: It can be difficult to make the AI model perfectly follow complex instructions, especially regarding the spatial relationship between multiple objects in the prompt.
+
+    Ethical Concerns (Bias): The model may unintentionally perpetuate social biases (e.g., race, gender) that were present in its massive training dataset, leading to stereotypical outputs.
+
+    Intellectual Property: Since the model is trained on existing art, using the output raises ongoing questions about originality and copyright ownership when the source material was used without direct permission from the original artists.
+
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+Project Growth and Future Features
+
+    Iterative Refinement and Editing Tools:
+
+        Integrate a "masking and inpainting" feature that allows users to select specific areas of a generated image (like a face or an object) and edit them using a new text prompt, significantly enhancing creative control.
+
+        Develop "Outpainting" capabilities to expand the image canvas beyond the original boundaries, creating larger, panoramic artworks.
+
+    Increased Control over Style and Composition:
+
+        Implement Style-Blending: Allow users to upload two reference images—one for content and one for style—to generate a completely new artwork that combines both.
+
+        Add Pre-defined Parameters: Introduce sliders or numerical inputs for advanced users to control aspects like lighting, camera angle, color saturation, and level of detail.
+
+    Community and Collaboration:
+
+        Create a "Prompt Sharing" platform where users can post their generated art alongside the exact text prompt used, fostering a community of prompt engineers and accelerating learning.
+
+    Addressing Limitations:
+
+        Focus on fine-tuning the model specifically to reduce common errors, particularly generating correct human anatomy (hands) and legible text.
+
+Required Skills and Assistance
+
+To transition this project from a prototype to a deployable tool, the following skills and resources would be necessary:
+
+    Advanced ML Engineering: Expertise in model fine-tuning (using concepts like LoRAs) and optimization for faster inference speed.
+
+    Backend Development (API): Assistance in creating a robust, scalable API to handle high volumes of simultaneous generation requests.
+
+    Cloud Infrastructure: Resources for deploying the model on powerful GPU-accelerated cloud services (like AWS, Azure, or GCP) to manage the intensive computational load.
+
+    UI/UX Design: Professional design input to create a more polished, user-friendly interface that simplifies the prompt-writing and editing process.
+
 
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, dat
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
-view raw
-Building AI README template hosted with ❤ by GitHub 
+This project was made possible by the following resources and communities:
+
+    Building AI Course: This project serves as the final submission for the Building AI Course by the University of Helsinki / Elements of AI, which provided the foundational knowledge for this development.
+
+    Generative Model Architecture: Inspired by the pioneering work on Diffusion Models and large-scale text-to-image synthesis, specifically the research concepts introduced by models like Stable Diffusion and DALL-E.
+
+    Training Data (Conceptual): Conceptual understanding derived from large-scale, publicly available image-text datasets like LAION-5B, which demonstrate the power of web-scraped data for training generative models.
+
+    Tools and Libraries: Reliance on open-source Machine Learning frameworks, particularly PyTorch or TensorFlow, and associated libraries used for building and managing the model pipeline.
+
+    Inspiration: The creative and ethical discussions within the wider AI Art Community regarding prompt engineering, intellectual property, and the future of human-AI collaboration in the arts.
+
