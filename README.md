@@ -65,15 +65,12 @@ main()
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
+Component	Description
+Data Source	External: Massive, publicly available image-text datasets collected by third-party research groups (e.g., Stability AI / LAION-5B).
+Collection	We use data collected by someone else. The project relies on the pre-trained knowledge of the base model.
+AI Method	Diffusion Model (specifically, Latent Diffusion Model - LDM).
+Function	It generates images by iteratively removing noise guided by the user's text prompt (cross-modal synthesis).
+Our Role	Utilizing the pre-trained model via transfer learning and prompt engineering; we did not train the model from scratch.
 ## Challenges
 
     Technical Accuracy: The AI model often struggles with structural precision, specifically generating correct human anatomy (like fingers) and creating legible text or logos within the image.
